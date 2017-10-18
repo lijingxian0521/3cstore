@@ -2,6 +2,7 @@ let express = require('express');
 let session = require('express-session');
 let bodyParser = require('body-parser');
 let {computers,phones,other} = require('./goodsList');
+let list = require('./goodsList');
 let swiper = require('./homeSwiper');
 let cart = require('./cart');
 let app = express();
@@ -38,7 +39,12 @@ app.get('/',function (req,res) {
 app.get('/swiper', function (req, res) {
     res.json(swiper);
 });
+app.get('/list',function (req,res) {
+
+    res.json(list)
+});
 app.get('/computers',function (req,res) {
+
     res.json(computers)
 });
 app.get('/phones',function (req,res) {

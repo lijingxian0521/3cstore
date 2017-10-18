@@ -25,6 +25,7 @@ export default class App extends Component {
       <ConnectedRouter history={history}>
         <div>
           <Switch>
+
             <Route exact path="/" component={Ads}/>
             <Route path="/home" component={Home}/>
             <Route path="/list" component={List}/>
@@ -32,6 +33,7 @@ export default class App extends Component {
             <Route path="/cart" component={Cart}/>
             <Route path="/profile" component={Profile}/>
             <Route path="/detail" component={Detail}/>
+
           </Switch>
           <Tab/>
         </div>

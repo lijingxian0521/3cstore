@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import './index.less'
 import Search from '../../components/Search/index'
 import Computers from './Computers/index'

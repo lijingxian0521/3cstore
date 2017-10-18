@@ -10,7 +10,7 @@ module.exports = {
   },
   //配置调试工具，报错的话会提示源码的位置
   devtool:'cheap-module-source-map',
-  module:{
+    module:{
     rules:[
       {
         test:/\.js$/,

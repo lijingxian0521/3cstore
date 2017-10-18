@@ -53,6 +53,7 @@ app.get('/other',function (req,res) {
 app.get('/cart',function (req,res) {
     res.json(cart)
 });
+
 app.post('/cart',function (req,res) {
     // {
     //     count:1,
@@ -64,3 +65,4 @@ app.post('/cart',function (req,res) {
     product = {...product,...body};
     cart.push(product);
 });
+

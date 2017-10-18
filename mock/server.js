@@ -45,8 +45,9 @@ app.get('/phones',function (req,res) {
     res.json(phones)
 });
 app.get('/other',function (req,res) {
+
     res.json(other)
 });
 app.get('/cart',function (req,res) {
     res.cart
-})
+});

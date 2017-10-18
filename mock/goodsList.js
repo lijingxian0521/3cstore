@@ -1,7 +1,7 @@
 module.exports = {
     computers:[
         {
-            id:1,
+            id:101,
             brand:'苹果',
             description:'Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5 处理器/8GB内存/256GB SSD闪存 MMGG2CH/A)',
             price:7588,
@@ -44,7 +44,7 @@ module.exports = {
             ]
         },
         {
-            id:2,
+            id:102,
             brand:'苹果',
             description:'2017新款苹果Apple MacBook Pro 13英寸笔记本电脑 灰色/i5/256G/MPXT2CH/A',
             price:11188,
@@ -87,7 +87,7 @@ module.exports = {
             ]
         },
         {
-            id:3,
+            id:103,
             brand:'联想',
             description:'联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+128G SSD GTX1050Ti 4G IPS 黑)',
             price:5888,
@@ -130,7 +130,7 @@ module.exports = {
             ]
         },
         {
-            id:4,
+            id:104,
             brand:'联想',
             description:'联想（Lenovo）天逸510S商用台式办公电脑整机（i3-7100 4G1T 集显 WiFi 蓝牙 三年上门 win10）21.5英寸',
             price:3299,
@@ -173,7 +173,7 @@ module.exports = {
             ]
         },
         {
-            id:5,
+            id:105,
             brand:'华硕',
             description:'华硕(ASUS) 灵耀U4000UQ 14英寸超窄边框轻薄笔记本电脑(i5-7200U 8G 256GSSD 940MX 2G独显 FHD IPS)灰色',
             price:5699,
@@ -216,7 +216,7 @@ module.exports = {
             ]
         },
         {
-            id:6,
+            id:106,
             brand:'华硕',
             description:'华硕（ASUS）新品14英寸A441NA3450商务办公学生超轻薄便携笔记本电脑 暗影金 256G原厂固态官方标配',
             price:3099,
@@ -259,7 +259,7 @@ module.exports = {
             ]
         },
         {
-            id:7,
+            id:107,
             brand:'苹果',
             description:'Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5 处理器/8GB内存/256GB SSD闪存 MMGG2CH/A)',
             price:7588,
@@ -302,7 +302,7 @@ module.exports = {
             ]
         },
         {
-            id:8,
+            id:108,
             brand:'苹果',
             description:'2017新款苹果Apple MacBook Pro 13英寸笔记本电脑 灰色/i5/256G/MPXT2CH/A',
             price:11188,
@@ -345,7 +345,7 @@ module.exports = {
             ]
         },
         {
-            id:9,
+            id:109,
             brand:'联想',
             description:'联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+128G SSD GTX1050Ti 4G IPS 黑)',
             price:5888,
@@ -388,7 +388,7 @@ module.exports = {
             ]
         },
         {
-            id:10,
+            id:110,
             brand:'联想',
             description:'联想（Lenovo）天逸510S商用台式办公电脑整机（i3-7100 4G1T 集显 WiFi 蓝牙 三年上门 win10）21.5英寸',
             price:3299,
@@ -431,7 +431,7 @@ module.exports = {
             ]
         },
         {
-            id:11,
+            id:111,
             brand:'华硕',
             description:'华硕(ASUS) 灵耀U4000UQ 14英寸超窄边框轻薄笔记本电脑(i5-7200U 8G 256GSSD 940MX 2G独显 FHD IPS)灰色',
             price:5699,
@@ -474,7 +474,7 @@ module.exports = {
             ]
         },
         {
-            id:12,
+            id:112,
             brand:'华硕',
             description:'华硕（ASUS）新品14英寸A441NA3450商务办公学生超轻薄便携笔记本电脑 暗影金 256G原厂固态官方标配',
             price:3099,
@@ -519,7 +519,7 @@ module.exports = {
     ],
     phones:[
         {
-            id:1,
+            id:201,
             brand:'苹果',
             description:'Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机',
             price:6388,
@@ -563,7 +563,7 @@ module.exports = {
             ]
         },
         {
-            id:2,
+            id:202,
             brand:'苹果',
             description:'苹果 Apple iPhone8 Plus 手机 金色 全网通 64GB',
             price:6218,
@@ -607,7 +607,7 @@ module.exports = {
             ]
         },
         {
-            id:3,
+            id:203,
             brand:'小米',
             description:'小米（MI） 小米MIX2 手机 陶瓷黑色 全网通6G+128G',
             price:3488,
@@ -651,7 +651,7 @@ module.exports = {
             ]
         },
         {
-            id:4,
+            id:204,
             brand:'小米',
             description:'小米（MI） 小米4A 红米4A 4G手机 玫瑰金 移动全网通(2G RAM+16G ROM)',
             price:605,
@@ -695,7 +695,7 @@ module.exports = {
             ]
         },
         {
-            id:5,
+            id:205,
             brand:'华为',
             description:'华为 HUAWEI nova 2 4GB+64GB 玫瑰金 移动联通电信4G手机 双卡双待',
             price:2499,
@@ -739,7 +739,7 @@ module.exports = {
             ]
         },
         {
-            id:6,
+            id:206,
             brand:'华为',
             description:'荣耀9 全网通 尊享版 6GB+128GB 幻夜黑 移动联通电信4G手机 双卡双待',
             price:2999,
@@ -783,7 +783,7 @@ module.exports = {
             ]
         },
         {
-            id:7,
+            id:207,
             brand:'苹果',
             description:'Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机',
             price:6388,
@@ -827,7 +827,7 @@ module.exports = {
             ]
         },
         {
-            id:8,
+            id:208,
             brand:'苹果',
             description:'苹果 Apple iPhone8 Plus 手机 金色 全网通 64GB',
             price:6218,
@@ -871,7 +871,7 @@ module.exports = {
             ]
         },
         {
-            id:9,
+            id:209,
             brand:'小米',
             description:'小米（MI） 小米MIX2 手机 陶瓷黑色 全网通6G+128G',
             price:3488,
@@ -915,7 +915,7 @@ module.exports = {
             ]
         },
         {
-            id:10,
+            id:210,
             brand:'小米',
             description:'小米（MI） 小米4A 红米4A 4G手机 玫瑰金 移动全网通(2G RAM+16G ROM)',
             price:605,
@@ -959,7 +959,7 @@ module.exports = {
             ]
         },
         {
-            id:11,
+            id:211,
             brand:'华为',
             description:'华为 HUAWEI nova 2 4GB+64GB 玫瑰金 移动联通电信4G手机 双卡双待',
             price:2499,
@@ -1003,7 +1003,7 @@ module.exports = {
             ]
         },
         {
-            id:12,
+            id:212,
             brand:'华为',
             description:'荣耀9 全网通 尊享版 6GB+128GB 幻夜黑 移动联通电信4G手机 双卡双待',
             price:2999,
@@ -1049,7 +1049,7 @@ module.exports = {
     ],
     other:[
         {
-            id:1,
+            id:301,
             brand:'苹果',
             description:'Apple iPad Pro 平板电脑 10.5 英寸（512G WLAN版/A10X芯片/Retina屏/Multi-Touch技术 MPGK2CH/A）金色',
             price:7299,
@@ -1092,7 +1092,7 @@ module.exports = {
             ]
         },
         {
-            id:2,
+            id:302,
             brand:'苹果',
             description:'Apple Watch Series 3智能手表（GPS款 42毫米 深空灰色铝金属表壳 灰色运动型表带 MR362CH/A）',
             price:2699,
@@ -1135,7 +1135,7 @@ module.exports = {
             ]
         },
         {
-            id:3,
+            id:303,
             brand:'小米',
             description:'小米（MI）小米电视4A 标准版 55英寸 HDR 2GB+8GB 四核64位高性能处理器 4K超高清智能语音网络液晶平板电视（L55M5-AZ）',
             price:2999,
@@ -1178,7 +1178,7 @@ module.exports = {
             ]
         },
         {
-            id:4,
+            id:304,
             brand:'小米',
             description:'小米（MI）小米手环2代 智能运动手环 心率手环腕带防水手表计步器 小米手环2黑色',
             price:159,
@@ -1221,7 +1221,7 @@ module.exports = {
             ]
         },
         {
-            id:5,
+            id:305,
             brand:'华为',
             description:'华为（HUAWEI） PT500 500M高速电力猫穿墙宝单只装/配合无线路由器使用/信号扩展更稳定',
             price:139,
@@ -1264,7 +1264,7 @@ module.exports = {
             ]
         },
         {
-            id:6,
+            id:306,
             brand:'华为',
             description:'华为（HUAWEI） WS550 450M无线路由器',
             price:169,
@@ -1307,7 +1307,7 @@ module.exports = {
             ]
         },
         {
-            id:7,
+            id:307,
             brand:'苹果',
             description:'Apple iPad Pro 平板电脑 10.5 英寸（512G WLAN版/A10X芯片/Retina屏/Multi-Touch技术 MPGK2CH/A）金色',
             price:7299,
@@ -1350,7 +1350,7 @@ module.exports = {
             ]
         },
         {
-            id:8,
+            id:308,
             brand:'苹果',
             description:'Apple Watch Series 3智能手表（GPS款 42毫米 深空灰色铝金属表壳 灰色运动型表带 MR362CH/A）',
             price:2699,
@@ -1393,7 +1393,7 @@ module.exports = {
             ]
         },
         {
-            id:9,
+            id:309,
             brand:'小米',
             description:'小米（MI）小米电视4A 标准版 55英寸 HDR 2GB+8GB 四核64位高性能处理器 4K超高清智能语音网络液晶平板电视（L55M5-AZ）',
             price:2999,
@@ -1436,7 +1436,7 @@ module.exports = {
             ]
         },
         {
-            id:10,
+            id:310,
             brand:'小米',
             description:'小米（MI）小米手环2代 智能运动手环 心率手环腕带防水手表计步器 小米手环2黑色',
             price:159,
@@ -1479,7 +1479,7 @@ module.exports = {
             ]
         },
         {
-            id:11,
+            id:311,
             brand:'华为',
             description:'华为（HUAWEI） PT500 500M高速电力猫穿墙宝单只装/配合无线路由器使用/信号扩展更稳定',
             price:139,
@@ -1522,7 +1522,7 @@ module.exports = {
             ]
         },
         {
-            id:12,
+            id:312,
             brand:'华为',
             description:'华为（HUAWEI） WS550 450M无线路由器',
             price:169,

@@ -1,0 +1,1 @@
+export const FETCH_SLIDERS = 'FETCH_SLIDERS';

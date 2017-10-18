@@ -24,6 +24,7 @@ let ajax = ({method = '', url = '', async = true, data = {}, headers = {}}) => {
         };
     });
 };
+// Rem
 let setRem = (doc, win) => {
     console.log("dpr:" + win.devicePixelRatio);
     let docEle = doc.documentElement,

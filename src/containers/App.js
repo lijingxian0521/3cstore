@@ -14,7 +14,7 @@ import List from "./List/index";
 import Discovery from "./Discovery/index";
 import Cart from "./Cart/index";
 import Profile from "./Profile/index";
-import Detail from "./Detail/index";
+import Detail from "./Detail/detail";
 import Tab from "../components/Tab/index";
 
 const history = createHashHistory();
@@ -25,16 +25,15 @@ export default class App extends Component {
       <ConnectedRouter history={history}>
         <div>
           <Switch>
-            <Wrap>
-              
-            </Wrap>
-            {/*<Route exact path="/" component={Ads}/>*/}
-            <Route exact path="/home" component={Home}/>
-            <Route exact path="/list" component={List}/>
-            <Route exact path="/discovery" component={Discovery}/>
-            <Route exact path="/cart" component={Cart}/>
-            <Route exact path="/profile" component={Profile}/>
-            <Route exact path="/detail" component={Detail}/>
+
+            <Route exact path="/" component={Ads}/>
+            <Route path="/home" component={Home}/>
+            <Route path="/list" component={List}/>
+            <Route path="/discovery" component={Discovery}/>
+            <Route path="/cart" component={Cart}/>
+            <Route path="/profile" component={Profile}/>
+            <Route path="/detail" component={Detail}/>
+
           </Switch>
           <Tab/>
         </div>

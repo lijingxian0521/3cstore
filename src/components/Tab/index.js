@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import './index.less';
+import './footer.less';
 export default class Tab extends Component{
     render(){
         return(

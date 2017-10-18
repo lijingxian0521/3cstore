@@ -3,9 +3,11 @@ let session = require('express-session');
 let bodyParser = require('body-parser');
 let {computers,phones,other} = require('./goodsList');
 let list = require('./goodsList');
+let goodList = require('./goodsList');
 let swiper = require('./homeSwiper');
 let cart = require('./cart');
 let app = express();
+let {computers,phones,other} = goodList;
 app.use(session({
     resave:true,
     saveUninitialized:true,
@@ -20,22 +22,17 @@ app.listen(3000);
 });*/
 
 app.use(function (req, res, next) {
-    //如果客户端要向服务器发送cookie的话，绝不对写*
-    res.header('Access-Control-Allow-Origin', "http://localhost:8080");
-    res.header('Access-Control-Allow-Headers', "Content-Type");
-    res.header('Access-Control-Allow-Methods', "GET,POST,PUT,DELETE,OPTIONS");
-    //允许跨域传cookie
-    res.header('Access-Control-Allow-Credentials', "true");
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Content-Type,Accept');
+    res.header('Access-Control-Allow-Method', 'GET,POST');
+    res.header('Access-Control-Allow-Credentials', 'true');
     if (req.method == 'OPTIONS') {
-        res.end('');
+        res.end();
     } else {
         next();
     }
 });
 
-app.get('/',function (req,res) {
-    res.end('welcome')
-});
 app.get('/swiper', function (req, res) {
     res.json(swiper);
 });
@@ -54,5 +51,16 @@ app.get('/other',function (req,res) {
     res.json(other)
 });
 app.get('/cart',function (req,res) {
-    res.cart
-})
+    res.json(cart)
+});
+app.post('/cart',function (req,res) {
+    // {
+    //     count:1,
+    //     category:'computers',
+    //     id:102,
+    // }
+    let body= req.body;
+    let product = goodList[body.category].find((item,index)=>item.id == body.id);
+    product = {...product,...body};
+    cart.push(product);
+});

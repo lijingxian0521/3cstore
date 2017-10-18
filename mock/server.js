@@ -40,8 +40,14 @@ app.get('/swiper', function (req, res) {
     res.json(swiper);
 });
 app.get('/list',function (req,res) {
+    let {offset, limit} = req.query;
+    let clonedLessons = JSON.parse(JSON.stringify(list));
+    let list = [...clonedLessons.computers,...clonedLessons.phones,clonedLessons.other];
 
-    res.json(list)
+    if (offset == 36) {
+        clonedLessons.hasMore = false;
+    }
+    res.json(clonedLessons);
 });
 app.get('/computers',function (req,res) {
 

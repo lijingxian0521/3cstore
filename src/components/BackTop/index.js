@@ -22,6 +22,7 @@ export default class BackTop extends Component {
     // 返回顶部
     goBackTop = (e) => {
         let ele=e.target;
+        console.log(ele);
         clearInterval(ele.timer);
         let win = document.documentElement || document.body;
         let duration = win.scrollTop;

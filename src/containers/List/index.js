@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import './index.less'
 import Search from '../../components/Search/index'
-import Computers from './Computers/index'
-import Other from './Other/index'
-import Phones from './Phones/index'
-import Product from './Product/index'
-import BackTop from '../../components/BackTop/index'
+import {Link} from 'react-router-dom'
+import {upLoadMore,downRefresh} from '../../utils'
 
 import {connect} from 'react-redux'
 import actions from '../../store/actions/list'
@@ -23,6 +20,7 @@ export default class List extends Component {
             phonesFlag:false,
             otherFlag:false,
             product:[],
+            loading:false,
             scrollTop:0
         }
     }
@@ -34,9 +32,13 @@ export default class List extends Component {
     }
 
     componentDidMount() {
-
+        // upLoadMore(this.refs.list,this.loadMore);
+        // downRefresh(this.refs.list,this.handleTotal);
 
     }
+    // loadMore=()=>{
+    //     this.props.loadMore('/list')
+    // }
     handleTotal=()=>{
         this.getData();
         this.setState({
@@ -79,6 +81,7 @@ export default class List extends Component {
         this.props.getPhonesList('/phones');
         this.props.getOtherList('/other');
 
+
         return this.props.list;
 
 
@@ -106,11 +109,12 @@ export default class List extends Component {
             });
         }};
 
+
     render() {
         return (
             <div className="list-page" >
                 <Search searchProduct={this.searchProduct}/>
-                <div className="panel">
+                <div className="panel" >
                     <ul className="nav-wrap" >
                         <li onClick={this.handleTotal}>
                             <i className="iconfont icon-quanbu"></i>
@@ -129,28 +133,99 @@ export default class List extends Component {
                             <span>其他</span>
                         </li>
                     </ul>
-                    <div className="list-wrap" >
+                    <div className="list-wrap" ref="list">
+                        <ul>
+                            {
+                                this.props.list.computers&&this.state.computersFlag ?this.props.list.computers.map((item, index) => (
+
+                                    <li key={index}>
+                                        <Link to={{pathname:'/detail',state:{item}}}>
+                                            <div className="cover">
+                                                <img src={item.cover}/>
+                                            </div>
+                                            <div className="description">
+
+                                                <p>{item.description}</p>
+                                                <span>￥ {item.price}</span>
+                                            </div>
+                                        </Link>
+                                    </li>
+
+                                )):null
+                            }
 
                             {
-                                this.state.product?<Product product={this.state.product}/>: null
-                            }
-                            {
-                                this.props.list.computers&&this.state.computersFlag ?<Computers/>: null
+                                this.state.product?
+                                this.state.product.map((item, index) => (
+
+                                    <li key={index}>
+                                        <Link to={{pathname:'/detail',state:{item}}}>
+                                            <div className="cover">
+                                                <img src={item.cover}/>
+                                            </div>
+                                            <div className="description">
+
+                                                <p>{item.description}</p>
+                                                <span>￥ {item.price}</span>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                )):null
                             }
 
                             {
-                                this.props.list.phones&&this.state.phonesFlag ?<Phones/>: null
+                                this.props.list.phones&&this.state.phonesFlag ?
+                                this.props.list.phones.map((item, index) => (
+                                    <li key={index}>
+                                        <Link to={{pathname:'/detail',state:{item}}}>
+                                            <div className="cover">
+                                                <img src={item.cover}/>
+                                            </div>
+                                            <div className="description">
+
+                                                <p>{item.description}</p>
+                                                <span>￥ {item.price}</span>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                )):null
                             }
+
+
+
+
                             {
-                                this.props.list.other&&this.state.otherFlag ?<Other/>: null
+                                this.props.list.other&&this.state.otherFlag ?
+
+                                this.props.list.other.map((item, index) => (
+
+                                    <li key={index}>
+                                        <Link to={{pathname:'/detail',state:{item}}}>
+                                            <div className="cover">
+                                                <img src={item.cover}/>
+                                            </div>
+                                            <div className="description">
+
+                                                <p>{item.description}</p>
+                                                <span>￥ {item.price}</span>
+                                            </div>
+                                        </Link>
+                                    </li>
+
+                                )):null
                             }
+
+
+                        </ul>
+
 
 
 
                     </div>
+
                 </div>
 
-                <BackTop/>
+
             </div>
         )
     }

@@ -1,6 +1,8 @@
 module.exports = [
     {
-        id:1,
+        category:'computers',
+        count:1,
+        id:101,
         brand:'苹果',
         description:'Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5 处理器/8GB内存/256GB SSD闪存 MMGG2CH/A)',
         price:7588,
@@ -42,4 +44,5 @@ module.exports = [
             }
         ]
     },
+
 ];

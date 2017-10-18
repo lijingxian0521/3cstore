@@ -26,7 +26,7 @@ export default class App extends Component {
         <div>
           <Switch>
             <Wrap>
-              
+
             </Wrap>
             {/*<Route exact path="/" component={Ads}/>*/}
             <Route exact path="/home" component={Home}/>

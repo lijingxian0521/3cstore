@@ -25,6 +25,9 @@ export default class App extends Component {
       <ConnectedRouter history={history}>
         <div>
           <Switch>
+            <Wrap>
+              
+            </Wrap>
             {/*<Route exact path="/" component={Ads}/>*/}
             <Route exact path="/home" component={Home}/>
             <Route exact path="/list" component={List}/>

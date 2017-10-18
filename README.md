@@ -80,3 +80,4 @@ git checkout -b liuxd //这里创建自己的branch，建议用姓名缩写命�
 ```
 ## 注意事项
 - 建议使用iPhone6来开发，默认设置375px宽度的屏幕，1rem=100px
+- 引用className="container"可以引入页面中间容器

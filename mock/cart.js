@@ -1,5 +1,8 @@
 module.exports = [
     {
+        category:'computers',
+        count:1,
+        id:101,
         count: 1,
         id:1,
         brand:'苹果',
@@ -43,6 +46,7 @@ module.exports = [
             }
         ]
     },
+
     {
         count: 1,
         id:2,
@@ -87,4 +91,5 @@ module.exports = [
             }
         ]
     },
+
 ];
